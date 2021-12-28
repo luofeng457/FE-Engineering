@@ -1,0 +1,21 @@
+{
+  "name": "FE-Engineering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mori": "^0.3.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-core": "^6.26.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-react": "^7.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
