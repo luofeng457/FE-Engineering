@@ -70,6 +70,27 @@ cache-loader:
 
 ----
 
+## webpack自定义plugin
+
+可以结合webpack的生命周期钩子，在webpack的构建流程中引入自定义行为
+
+```js
+class TestPlugin {
+    apply(compiler) {
+        // 可以传入自定义参数
+        compiler.hooks.beforeRun.tap('TestPlugin', (params) => {
+            // 自定义操作
+            console.log('this is a test plugin')
+        })
+    }
+}
+
+module.exports = TestPlugin;
+```
+
+
+----
+
 # 撸一个简易 webpack
 
 ##  定义 Compiler 类
